@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Name : telegram-installer.sh
 ############################################################################
 ##    This program is free software: you can redistribute it and/or modify
 ##    it under the terms of the GNU General Public License as published by
@@ -15,10 +16,8 @@
 ##    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ############################################################################
 
-PKGNAME="tsetup"
-VERSION="0.8.55"
-URL="https://updates.tdesktop.com/tlinux/${PKGNAME}.${VERSION}.tar.xz"
-FILE="${PKGNAME}.${VERSION}.tar.xz"
+URL="https://tdesktop.com/linux"
+FILE="tsetup.tar.xz"
 OUTDIR="${HOME}/.telegram/bin"
 
 #check and create directories
@@ -57,7 +56,7 @@ main(){
   else
     
     if [ ! -f /tmp/${FILE} ];then
-      wget ${URL} -P /tmp
+      wget -O /tmp/${FILE} ${URL}
       tar xvf /tmp/${FILE} -C ${OUTDIR}
       echo
       askOpen
