@@ -105,8 +105,8 @@ main(){
       wget -O /tmp/${FILE} ${URL}
       tar xvf /tmp/${FILE} -C ${OUTDIR}
       echo
-      askOpen
       createSym
+      askOpen
     elif [ -f /tmp/${FILE} ];then
       tar xvf /tmp/${FILE} -C ${OUTDIR}
       echo
