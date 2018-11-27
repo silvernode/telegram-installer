@@ -16,7 +16,7 @@
 ##    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ############################################################################
 
-URL="https://tdesktop.com/linux"
+URL="https://telegram.org/dl/desktop/linux"
 FILE="tsetup.tar.xz"
 OUTDIR="${HOME}/.telegram/bin"
 SYMDIR="/usr/bin"
